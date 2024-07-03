@@ -12,7 +12,7 @@ RUN npm install
 
 RUN npm run compile:docker
 
-FROM node:lts-slim as runner
+FROM node:20.15.0-slim as runner
 # switch user
 USER node
 
